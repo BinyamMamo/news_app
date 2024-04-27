@@ -1,9 +1,12 @@
 ###############
 # Directories #
 ###############
+.venv
 node_modules
+dist
 
 
 ###############
 # Files       #
 ###############
+.env

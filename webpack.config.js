@@ -15,6 +15,7 @@ module.exports = {
       directory: path.resolve(__dirname, "dist"),
       watch: true,
     },
+    port: 3000,
   },
   module: {
     rules: [

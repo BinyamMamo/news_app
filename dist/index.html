@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News app</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        News APP
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
+
 <body>
-    <h1>Hello, Newfeed</h1>
+    <!-- Search bar -->
+    <div class="input-group flex-nowrap search">
+        <span class="input-group-text" id="addon-wrapping">Search By Country</span>
+        <input type="text" class="form-control" placeholder="Country" aria-label="Country"
+            aria-describedby="addon-wrapping" />
+        <a href="#" class="btn btn-primary">Search</a>
+    </div>
+
+    <!-- News Container -->
+    <div class="container" id="card-container">
+
+        <!-- News Card -->
+        <div class="card" style="width: 18rem">
+            <img src="https://cdn.mos.cms.futurecdn.net/wRy3qR7pk76qS7MCSbUjtD-1200-80.jpg" class="card-img-top"
+                alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#readmore-modal">
+                Read more
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="readmore-modal" tabindex="-1" aria-labelledby="readmore-modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="readmore-modal-label">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 <script defer src="main.js"></script></body>
+
 </html>
